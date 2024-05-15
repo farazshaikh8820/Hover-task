@@ -1,0 +1,153 @@
+
+.container{
+    height: 600px;
+    width: 500px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 400px;
+    position: relative;
+    overflow: hidden;
+}
+/* .text{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 100px;
+    color: rgb(92, 89, 89);
+
+} */
+.container img{
+   margin-left: 200px;
+   margin-right: 50px;
+   z-index: 1000px;
+}
+.container h1{
+   text-transform: uppercase;
+   margin-top: 35px;
+   margin-left: 200px;
+}
+.container h2{
+   text-transform: uppercase;
+   margin-top: 35px;
+   margin-left: 200px;
+}
+.container h3 {
+    margin-left: 220px;
+    text-transform: capitalize;
+    transform: translateY(initial);
+    overflow: hidden;
+}
+
+.container ::before:hover{
+  
+    transform: translateY(800%);
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .container::before {
+        content: "";
+        clip-path: circle(38.3% at 86% 4%);
+        position: absolute;
+        background-color: #f44336;
+        top: 0;
+        right: 0; 
+        height: 150px;
+        width: 150px;
+        scale: 2;
+        z-index: 1000;    
+    }
+
+    
+    .container:hover::before{
+        height: 200px;
+        width: 200px;
+        clip-path: circle(70.3% at 88% 4%);
+        transition: 1s;
+    }
+
+
+    .container button{
+
+        background-color:#f44336;
+        border: 1px solid black;
+        width: 100px;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        font-size: 16px;
+        margin-left: 220px;
+        text-transform: uppercase;    
+        /* transform: translateY(200%); */
+        overflow: hidden;
+}
+.container button:hover::before{
+    transform: translateY(initial);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dott{
+        position: relative;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transform: translateX(-10%);
+    transition: 0.5 s;
+    }
+    .dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: lightblue;
+    }
+    .dot1 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: lightsalmon;
+    }
+    .dot2 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: gray;
+    }
+
+
+
+    .container:hover .dott{
+        transform: initial;
+        transition: 1s;
+    }
